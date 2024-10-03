@@ -9,6 +9,6 @@ class MessageListCreateView(generics.ListCreateAPIView):
     serializer_class = MessageSerializer
 
 
-class MessageDeleteView(generics.DestroyAPIVew):
+class MessageDeleteView(generics.DestroyAPIView):
     queryset = Message.objects.all()
     serializer_class = MessageSerializer
