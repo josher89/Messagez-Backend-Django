@@ -13,6 +13,6 @@ class MessagePerson(models.Model):
     lastname = models.CharField(max_length=20)
 
     def __str__(self):
-        return f"Hello {self.name} {self.lastname}"
+        return f"{self.name} {self.lastname}"
     
 
